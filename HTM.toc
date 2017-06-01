@@ -1,0 +1,14 @@
+## Interface: 20400
+## Version: 1.0
+## Title: Hellfire Threat Meter
+## Notes: A 100% accurate threat meter for the Hellfire I and Hellfire II private servers
+## Author: Ike
+## OptionalDeps: Ace3
+## X-Category: Combat
+## SavedVariables: HTMDB
+## X-Embeds: Ace3
+
+embeds.xml
+
+HTM.lua
+Gui.lua
