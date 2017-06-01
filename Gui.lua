@@ -17,7 +17,6 @@ function HTM:CreateGui()
         
         self.frame:SetBackdrop({
             bgFile = "Interface\\DialogFrame\\UI-DialogBox-Gold-Background",
-            --edgeFile = "Interface\\DialogFrame\\UI-DialogBox-Gold-Border",
             tile = true,
             tileSize = 32,
             edgeSize = 32,
@@ -31,22 +30,18 @@ function HTM:CreateGui()
         self.frame.bar1 = HTM:CreateBar();
         self.frame.bar1:SetPoint("TOPLEFT", self.frame, "TOPLEFT", 13, -14);
         self:UpdateBarData(1, nil);
-        self:UpdateBarData(1, {name="Ab", unit="raid2", threat=3866.23}, 13000);
         
         self.frame.bar2 = HTM:CreateBar();
         self.frame.bar2:SetPoint("TOPLEFT", self.frame.bar1, "BOTTOMLEFT", 0, -2);
         self:UpdateBarData(2, nil);
-        self:UpdateBarData(2, {name="Ab", unit="raid2", threat=3866.23}, 13000);
         
         self.frame.bar3 = HTM:CreateBar();
         self.frame.bar3:SetPoint("TOPLEFT", self.frame.bar2, "BOTTOMLEFT", 0, -2);
         self:UpdateBarData(3, nil);
-        self:UpdateBarData(3, {name="Ab", unit="raid2", threat=3866.23}, 13000);
         
         self.frame.bar4 = HTM:CreateBar();
         self.frame.bar4:SetPoint("TOPLEFT", self.frame.bar3, "BOTTOMLEFT", 0, -2);
         self:UpdateBarData(4, nil);
-        self:UpdateBarData(4, {name="Ab", unit="raid2", threat=3866.23}, 13000);
     end
 end
 
@@ -77,7 +72,6 @@ function HTM:CreateBar()
         bgFile = "Interface\\BUTTONS\\WHITE8X8",
         tile = true,
         tileSize = 32,
-        --insets =  {left=11,right=12,top=12,bottom=11}
     });
     
     bar.playerName = bar:CreateFontString(nil, nil, "GameFontNormal");
