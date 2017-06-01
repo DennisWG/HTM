@@ -76,15 +76,12 @@ function HTM:CreateBar()
     
     bar.playerName = bar:CreateFontString(nil, nil, "GameFontNormal");
 	bar.playerName:SetPoint("LEFT", bar, "LEFT", 2, 0);
-	bar.playerName:SetText("Longplrna");
     
     bar.percentage = bar:CreateFontString(nil, nil, "GameFontNormal");
 	bar.percentage:SetPoint("RIGHT", bg, "RIGHT", -2, 0);
-	bar.percentage:SetText("130%");
     
     bar.threatValue = bar:CreateFontString(nil, nil, "GameFontNormal");
 	bar.threatValue:SetPoint("RIGHT", bar.percentage, "LEFT", -20, 0);
-	bar.threatValue:SetText("8866");
     
     bg.bar = bar;
    return bg; 
